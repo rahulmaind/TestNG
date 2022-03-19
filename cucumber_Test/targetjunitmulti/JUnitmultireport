@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="17.849145">
+    <testcase classname="data table entries" name="User login with valid login details" time="9.685047">
+        <system-out><![CDATA[Given User present on web-shop login page...................................passed
+When User sign in with email and password...................................passed
+Then User should see logout.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User Login" name="Login with valid credentials" time="8.164098">
+        <system-out><![CDATA[Given User is on login page.................................................passed
+When User entered valid email and password..................................passed
+Then User should see a message "Login Successful"...........................passed
+]]></system-out>
+    </testcase>
+</testsuite>

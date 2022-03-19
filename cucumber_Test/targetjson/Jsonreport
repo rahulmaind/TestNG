@@ -1,0 +1,141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User login with valid login details",
+        "description": "",
+        "id": "data-table-entries;user-login-with-valid-login-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5402462400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User present on web-shop login page",
+            "match": {
+              "location": "Verify_Logindatatable.user_present_on_web_shop_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2866407600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User sign in with email and password",
+            "match": {
+              "location": "Verify_Logindatatable.user_sign_in_with_email_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rahulhcl@gmail.com",
+                  "rahul123"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1188724700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should see logout",
+            "match": {
+              "location": "Verify_Logindatatable.user_should_see_logout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "data table entries",
+    "description": "",
+    "id": "data-table-entries",
+    "keyword": "Feature",
+    "uri": "datatable.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "user-login;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5030924300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on login page",
+            "match": {
+              "location": "VerifyLogin.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2218811400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User entered valid email and password",
+            "match": {
+              "location": "VerifyLogin.user_entered_valid_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2683218500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see a message \"Login Successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login Successful",
+                  "offset": 27
+                }
+              ],
+              "location": "VerifyLogin.user_should_see_a_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "User Login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]
